@@ -1,0 +1,21 @@
+name: PvPEvents
+version: '${version}'
+main: dev.pvpevents.PvPEventsPlugin
+api-version: '26.2'
+description: PvP practice, duels and sumo events for a small private server.
+author: PvPEvents
+
+commands:
+  pvpevents:
+    description: PvPEvents main command
+    usage: /<command> [info|reload]
+    aliases: [pe]
+    permission: pvpevents.use
+
+permissions:
+  pvpevents.use:
+    description: Use basic PvPEvents commands
+    default: true
+  pvpevents.admin:
+    description: Use PvPEvents administrative commands
+    default: op
